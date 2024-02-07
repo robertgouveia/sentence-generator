@@ -4,7 +4,6 @@ const firstToUpper = (string) => {
     let rest = string.slice(1)
     return first + rest
 }
-
 //sentence factory
 const sentenceFactory = () => {
     return {
@@ -28,7 +27,7 @@ const sentenceFactory = () => {
         },
         build(){
             let build = []
-            build.push(this.generate(build))
+            build.push(firstToUpper(this.generate(build)))
             build.push(this._verb[Math.floor(Math.random() * this._verb.length)])
             build.push(this.generate(build))
             console.log(build.join(" "))
