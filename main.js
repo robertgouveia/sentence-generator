@@ -29,7 +29,7 @@ const sentenceFactory = () => {
             let build = []
             build.push(firstToUpper(this.generate(build)))
             build.push(this._verb[Math.floor(Math.random() * this._verb.length)])
-            build.push(this.generate(build))
+            build.push(this.generate(build) + '.')
             console.log(build.join(" "))
         },
         generate(array){
@@ -47,4 +47,8 @@ const sentenceFactory = () => {
 }
 
 const sentence = sentenceFactory()
+const sentence2 = sentenceFactory()
+const sentence3 = sentenceFactory()
 sentence.build()
+sentence2.build()
+sentence3.build()
