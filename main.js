@@ -4,12 +4,6 @@ const firstToUpper = (string) => {
     let rest = string.slice(1)
     return first + rest
 }
-const unique = (array, string) =>{
-    let result = array.findIndex(key => {
-        return key === string
-    })
-    return result !== -1
-}
 
 //sentence factory
 const sentenceFactory = () => {
